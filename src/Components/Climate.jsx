@@ -44,8 +44,8 @@ const Climate = () => {
             <li className='tips'> <i class="fa-solid fa-droplet"></i> Humidity:<b> {climate.main?.humidity}%</b></li>
             <li  className='tips'><i class="fa-solid fa-temperature-half"></i> Pressure:<b> {climate.main?.pressure}hPa</b></li>
             <li  className='tips'><i class="fa-solid fa-cloud"></i> Clouds: <b> {climate.clouds?.all}% </b></li>
-            <li> <i class="fa-solid fa-location-arrow"></i> Latitude: <b>{climate.coord.lat}</b></li>
-            <li> <i class="fa-solid fa-location-arrow"></i>Longitude: <b>{climate.coord.lon}</b></li>
+            <li> <i class="fa-solid fa-location-arrow"></i> Latitude: <b>{climate.coord?.lat}</b></li>
+            <li> <i class="fa-solid fa-location-arrow"></i>Longitude: <b>{climate.coord?.lon}</b></li>
             </ul>
             </div>
 
